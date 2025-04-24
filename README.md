@@ -15,7 +15,7 @@ public class MazeGame extends JFrame implements KeyListener {
     int playerX = 1, playerY = 1; // Start position
 
     public MazeGame() {
-        setTitle("🎮 Maze Game - Arrow Keys to Play");
+        setTitle("Maze Game - Arrow Keys to Play");
         setSize(maze[0].length * cellSize + 40, maze.length * cellSize + 60);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -63,7 +63,7 @@ public class MazeGame extends JFrame implements KeyListener {
             repaint();
 
             if (maze[playerX][playerY] == 9) {
-                JOptionPane.showMessageDialog(this, "🎉 Congratulations! You reached the goal!");
+                JOptionPane.showMessageDialog(this, "Congratulations! You reached the goal!");
             }
         }
     }
